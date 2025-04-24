@@ -1,0 +1,37 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+**/logs/
+**/*.log
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ
+out/
+
+# Build tools
+build/
+
+# Test outputs
+test-output/
+
+# Env files
+.env
+*.env
+
+# Others
+*.swp
