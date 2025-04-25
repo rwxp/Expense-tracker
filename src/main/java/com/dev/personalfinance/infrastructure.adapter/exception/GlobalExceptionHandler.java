@@ -1,6 +1,8 @@
 package com.dev.personalfinance.infrastructure.adapter.exception;
 
-import com.example.domain.exception.*;
+import com.dev.personalfinance.domain.exception.BusinessException;
+import com.dev.personalfinance.domain.exception.ResourceNotFoundException;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
