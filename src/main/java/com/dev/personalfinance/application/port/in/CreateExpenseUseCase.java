@@ -5,6 +5,6 @@ import com.dev.personalfinance.infrastructure.adapter.in.rest.dto.ExpenseRequest
 
 public interface CreateExpenseUseCase{
 
-    Expense createExpense(ExpenseRequest expense);
+    Expense createExpense(Expense expense);
 
 }

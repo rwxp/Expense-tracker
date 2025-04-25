@@ -24,7 +24,8 @@ public class ExpenseController {
 
     @PostMapping
     public ResponseEntity<ExpenseResponse> createExpense(@RequestBody ExpenseRequest request) {
-        Expense createdExpense = createExpenseUseCase.createExpense(request);
+        Expense initialExpense = expenseMapper.toDomain(request);
+        Expense createdExpense = createExpenseUseCase.createExpense(initialExpense);
         ExpenseResponse response = expenseMapper.toResponse(createdExpense);
 
         return ResponseEntity.ok(response);
